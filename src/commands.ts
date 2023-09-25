@@ -25,9 +25,16 @@ const ManCommand: Command = {
 	run: (interaction) => Promise.resolve('https://i.tycrek.dev/manhorse')
 };
 
+const CatJamCommand: Command = {
+	name: 'catjam',
+	description: 'boppin',
+	run: (interaction) => Promise.resolve('https://cdn.discordapp.com/emojis/743135957729017877.gif')
+};
+
 export const Commands = [
 	TokeCommand,
 	CheersCommand,
 	AussieCommand,
 	ManCommand,
+	CatJamCommand,
 ];
