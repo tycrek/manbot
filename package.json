@@ -1,0 +1,20 @@
+{
+	"name": "manbot",
+	"type": "module",
+	"description": "A Discord bot",
+	"version": "0.0.0",
+	"author": "tycrek <t@tycrek.com> (https://tycrek.com)",
+	"repository": "github:tycrek/manbot",
+	"scripts": {
+		"publish": "npx wrangler deploy src/index.ts --compatibility-date=2023-09-17 --name=manbot"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20230914.0",
+		"discord-interactions": "^3.4.0",
+		"node-fetch": "^3.3.1",
+		"typescript": "^5.2.2"
+	},
+	"dependencies": {
+		"hono": "^3.7.2"
+	}
+}
