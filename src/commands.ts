@@ -36,26 +36,25 @@ const BeerCommand: Command = {
 	description: 'aye',
 	options: [
 		{
-			name: 'solid',
-			description: 'Single image instead of a GIF',
-			required: true,
+			name: 'type',
+			description: 'PNG or GIF?',
+			required: false,
 			type: ApplicationCommandOptionType.STRING,
-			autocomplete: true,
 			choices: [
 				{
 					name: 'PNG',
-					value: 'png'
+					value: 'type_png'
 				},
 				{
 					name: 'GIF',
-					value: 'gif'
+					value: 'type_gif'
 				}
 			]
 		}
 	],
-	run: (interaction) => new Promise((resolve, reject) => {
-		console.log(interaction.data);
-		resolve('coming soon');
+	run: (i) => new Promise((resolve, reject) => {
+		const type: 'png' | 'gif' = (i.data.options && i.data.options[0] ? i.data.options[0]?.value : 'type_gif').replace('type_', '') as any;
+		resolve(`https://i.tycrek.dev/cheers${type === 'gif' ? '-beer.gif' : 'beer.png'}`);
 	})
 };
 
