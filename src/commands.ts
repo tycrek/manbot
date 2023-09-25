@@ -23,7 +23,7 @@ const ManCommand: Command = {
 	name: 'man',
 	description: 'man',
 	run: (interaction) => Promise.resolve('https://i.tycrek.dev/manhorse')
-}
+};
 
 export const Commands = [
 	TokeCommand,
