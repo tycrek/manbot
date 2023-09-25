@@ -31,10 +31,39 @@ const CatJamCommand: Command = {
 	run: (interaction) => Promise.resolve('https://cdn.discordapp.com/emojis/743135957729017877.gif')
 };
 
+const BeerCommand: Command = {
+	name: 'beer',
+	description: 'aye',
+	options: [
+		{
+			name: 'solid',
+			description: 'Single image instead of a GIF',
+			required: true,
+			type: ApplicationCommandOptionType.STRING,
+			autocomplete: true,
+			choices: [
+				{
+					name: 'PNG',
+					value: 'png'
+				},
+				{
+					name: 'GIF',
+					value: 'gif'
+				}
+			]
+		}
+	],
+	run: (interaction) => new Promise((resolve, reject) => {
+		console.log(interaction.data);
+		resolve('coming soon');
+	})
+};
+
 export const Commands = [
 	TokeCommand,
 	CheersCommand,
 	AussieCommand,
 	ManCommand,
 	CatJamCommand,
+	BeerCommand,
 ];
