@@ -1,0 +1,8 @@
+# Cloudflare Pages local environment variables
+.dev.vars
+# NPM packages
+node_modules/
+# Output directory
+dist
+# Wrangler local cache
+.wrangler/
