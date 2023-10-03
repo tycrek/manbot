@@ -58,6 +58,12 @@ const BeerCommand: Command = {
 	})
 };
 
+const DedCommand: Command = {
+	name: 'ded',
+	description: 'there is AUHHGHHA KHUAGHH',
+	run: (interaction) => Promise.resolve('https://jmoore.dev/v/Tom%20Scott%20chokes%20on%20vape.mp4')
+};
+
 export const Commands = [
 	TokeCommand,
 	CheersCommand,
@@ -65,4 +71,5 @@ export const Commands = [
 	ManCommand,
 	CatJamCommand,
 	BeerCommand,
+	DedCommand,
 ];
