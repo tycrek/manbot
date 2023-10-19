@@ -10,7 +10,7 @@ const TokeCommand: Command = {
 const CheersCommand: Command = {
 	name: 'cheers',
 	description: 'Time for a drink',
-	run: (interaction) => Promise.resolve(`Rounds on me, bottoms up!`)
+	run: (interaction) => Promise.resolve(`WINE TIME, bottoms up!`)
 };
 
 const AussieCommand: Command = {
