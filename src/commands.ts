@@ -25,6 +25,12 @@ const ManCommand: Command = {
 	run: (interaction) => Promise.resolve('https://i.tycrek.dev/manhorse')
 };
 
+const BoyCommand: Command = {
+	name: 'boy',
+	description: 'boy',
+	run: (interaction) => Promise.resolve('https://i.tycrek.dev/boyhorse')
+};
+
 const CatJamCommand: Command = {
 	name: 'catjam',
 	description: 'boppin',
@@ -69,6 +75,7 @@ export const Commands = [
 	CheersCommand,
 	AussieCommand,
 	ManCommand,
+	BoyCommand,
 	CatJamCommand,
 	BeerCommand,
 	DedCommand,
