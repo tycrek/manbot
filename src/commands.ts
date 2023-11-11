@@ -25,10 +25,10 @@ const ManCommand: Command = {
 	run: (interaction) => Promise.resolve('https://i.tycrek.dev/manhorse')
 };
 
-const BoyCommand: Command = {
-	name: 'boy',
-	description: 'boy',
-	run: (interaction) => Promise.resolve('https://i.tycrek.dev/boyhorse')
+const BroCommand: Command = {
+	name: 'bro',
+	description: 'bro',
+	run: (interaction) => Promise.resolve('https://i.tycrek.dev/brohorse')
 };
 
 const CatJamCommand: Command = {
@@ -75,7 +75,7 @@ export const Commands = [
 	CheersCommand,
 	AussieCommand,
 	ManCommand,
-	BoyCommand,
+	BroCommand,
 	CatJamCommand,
 	BeerCommand,
 	DedCommand,
