@@ -134,18 +134,14 @@ export const Commands: Command[] = [
 			};
 
 			return Promise.resolve(`
-	### Commands
-	
-	**party**
-	
+## Commands
+**party**
 	${joiner(coms.party)}
 	
-	**horses**
-	
+**horses**
 	${joiner(coms.horses)}
 	
-	**other**
-	
+**other**
 	${joiner(coms.other)}`
 			);
 		}
