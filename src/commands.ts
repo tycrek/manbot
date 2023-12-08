@@ -37,6 +37,30 @@ const WomanCommand: Command = {
 	run: (interaction) => Promise.resolve('https://i.tycrek.dev/womanhorse'),
 };
 
+const JuanCommand: Command = {
+	name: 'juan',
+	description: 'juan',
+	run: (interaction) => Promise.resolve('https://i.tycrek.dev/juanhorse'),
+};
+
+const HorseCommand: Command = {
+	name: 'horse',
+	description: 'horse',
+	run: (interaction) => Promise.resolve('https://i.tycrek.dev/horsehorse'),
+};
+
+const CarlosCommand: Command = {
+	name: 'carlos',
+	description: 'carlos',
+	run: (interaction) => Promise.resolve('https://i.tycrek.dev/carloshorse'),
+};
+
+const ACommand: Command = {
+	name: 'a',
+	description: 'a',
+	run: (interaction) => Promise.resolve('https://i.tycrek.dev/ahorse'),
+};
+
 const ApacheCommand: Command = {
 	name: 'apache',
 	description: 'apache',
@@ -89,6 +113,10 @@ export const Commands = [
 	ManCommand,
 	BroCommand,
 	WomanCommand,
+	JuanCommand,
+	HorseCommand,
+	CarlosCommand,
+	ACommand,
 	ApacheCommand,
 	CatJamCommand,
 	BeerCommand,
