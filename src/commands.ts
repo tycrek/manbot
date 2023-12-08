@@ -106,7 +106,7 @@ const DedCommand: Command = {
 	run: (interaction) => Promise.resolve('https://jmoore.dev/v/Tom%20Scott%20chokes%20on%20vape.mp4')
 };
 
-export const Commands = [
+export const Commands: Command[] = [
 	TokeCommand,
 	CheersCommand,
 	AussieCommand,
@@ -121,4 +121,33 @@ export const Commands = [
 	CatJamCommand,
 	BeerCommand,
 	DedCommand,
+
+	{
+		name: 'help',
+		description: 'get help',
+		run: (interaction) => {
+			const joiner = (list: string[]) => `\`${list.join('`, `')}\``;
+			const coms = {
+				party: ['toke', 'cheers', 'beer', 'ded'],
+				horses: ['man', 'bro', 'woman', 'juan', 'horse', 'carlos', 'a', 'apache'],
+				other: ['catjam', 'aussie']
+			};
+
+			return Promise.resolve(`
+	### Commands
+	
+	**party**
+	
+	${joiner(coms.party)}
+	
+	**horses**
+	
+	${joiner(coms.horses)}
+	
+	**other**
+	
+	${joiner(coms.other)}`
+			);
+		}
+	}
 ];
