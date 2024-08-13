@@ -103,7 +103,13 @@ const BeerCommand: Command = {
 const DedCommand: Command = {
 	name: 'ded',
 	description: 'there is AUHHGHHA KHUAGHH',
-	run: (interaction) => Promise.resolve('https://jmoore.dev/v/Tom%20Scott%20chokes%20on%20vape.mp4')
+	run: (interaction) => Promise.resolve('https://tycrek.com/v/Tom%20Scott%20chokes%20on%20vape.mp4')
+};
+
+const BoobsCommand: Command = {
+	name: 'boobs',
+	description: 'bazonkas!',
+	run: (interaction) => Promise.resolve('https://cdn.discordapp.com/emojis/748672345077448824.gif?size=128&quality=lossless')
 };
 
 export const Commands: Command[] = [
@@ -121,6 +127,7 @@ export const Commands: Command[] = [
 	CatJamCommand,
 	BeerCommand,
 	DedCommand,
+	BoobsCommand,
 
 	{
 		name: 'help',
@@ -130,7 +137,7 @@ export const Commands: Command[] = [
 			const coms = {
 				party: ['toke', 'cheers', 'beer', 'ded'],
 				horses: ['man', 'bro', 'woman', 'juan', 'horse', 'carlos', 'a', 'apache'],
-				other: ['catjam', 'aussie']
+				other: ['catjam', 'aussie', 'boobs']
 			};
 
 			return Promise.resolve(`
