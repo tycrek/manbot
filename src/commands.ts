@@ -67,6 +67,18 @@ const ApacheCommand: Command = {
 	run: (interaction) => Promise.resolve('https://images.tycrek.com/nbhorse.jpg')
 }
 
+const WideCommand: Command = {
+	name: 'wide',
+	description: 'wide',
+	run: (interaction) => Promise.resolve('https://images.tycrek.com/wideman.jpg')
+}
+
+const McCommand: Command = {
+	name: 'mc',
+	description: 'mc',
+	run: (interaction) => Promise.resolve('https://images.tycrek.com/mcman.jpg')
+}
+
 const CatJamCommand: Command = {
 	name: 'catjam',
 	description: 'boppin',
@@ -124,6 +136,8 @@ export const Commands: Command[] = [
 	CarlosCommand,
 	ACommand,
 	ApacheCommand,
+	WideCommand,
+	McCommand,
 	CatJamCommand,
 	BeerCommand,
 	DedCommand,
@@ -136,7 +150,7 @@ export const Commands: Command[] = [
 			const joiner = (list: string[]) => `\`${list.join('`, `')}\``;
 			const coms = {
 				party: ['toke', 'cheers', 'beer', 'ded'],
-				horses: ['man', 'bro', 'woman', 'juan', 'horse', 'carlos', 'a', 'apache'],
+				horses: ['man', 'bro', 'woman', 'juan', 'horse', 'carlos', 'a', 'apache', 'wide', 'mc'],
 				other: ['catjam', 'aussie', 'boobs']
 			};
 
