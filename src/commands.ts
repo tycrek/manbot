@@ -22,49 +22,49 @@ const AussieCommand: Command = {
 const ManCommand: Command = {
 	name: 'man',
 	description: 'man',
-	run: (interaction) => Promise.resolve('https://i.tycrek.dev/manhorse')
+	run: (interaction) => Promise.resolve('https://images.tycrek.com/manhorse.jpg')
 };
 
 const BroCommand: Command = {
 	name: 'bro',
 	description: 'bro',
-	run: (interaction) => Promise.resolve('https://i.tycrek.dev/brohorse')
+	run: (interaction) => Promise.resolve('https://images.tycrek.com/brohorse.jpg')
 };
 
 const WomanCommand: Command = {
 	name: 'woman',
 	description: 'woman',
-	run: (interaction) => Promise.resolve('https://i.tycrek.dev/womanhorse'),
+	run: (interaction) => Promise.resolve('https://images.tycrek.com/womanhorse.jpg'),
 };
 
 const JuanCommand: Command = {
 	name: 'juan',
 	description: 'juan',
-	run: (interaction) => Promise.resolve('https://i.tycrek.dev/juanhorse'),
+	run: (interaction) => Promise.resolve('https://images.tycrek.com/juanhorse.JPG'),
 };
 
 const HorseCommand: Command = {
 	name: 'horse',
 	description: 'horse',
-	run: (interaction) => Promise.resolve('https://i.tycrek.dev/horsehorse'),
+	run: (interaction) => Promise.resolve('https://images.tycrek.com/horsehorse.JPG'),
 };
 
 const CarlosCommand: Command = {
 	name: 'carlos',
 	description: 'carlos',
-	run: (interaction) => Promise.resolve('https://i.tycrek.dev/carloshorse'),
+	run: (interaction) => Promise.resolve('https://images.tycrek.com/carloshorse.JPG'),
 };
 
 const ACommand: Command = {
 	name: 'a',
 	description: 'a',
-	run: (interaction) => Promise.resolve('https://i.tycrek.dev/ahorse'),
+	run: (interaction) => Promise.resolve('https://images.tycrek.com/ahorse.JPG'),
 };
 
 const ApacheCommand: Command = {
 	name: 'apache',
 	description: 'apache',
-	run: (interaction) => Promise.resolve('https://i.tycrek.dev/nbhorse')
+	run: (interaction) => Promise.resolve('https://images.tycrek.com/nbhorse.jpg')
 }
 
 const CatJamCommand: Command = {
@@ -96,14 +96,14 @@ const BeerCommand: Command = {
 	],
 	run: (i) => new Promise((resolve, reject) => {
 		const type: 'png' | 'gif' = (i.data.options && i.data.options[0] ? i.data.options[0]?.value : 'type_gif').replace('type_', '') as any;
-		resolve(`https://i.tycrek.dev/cheers${type === 'gif' ? '-beer.gif' : 'beer.png'}`);
+		resolve(`https://images.tycrek.com/cheers${type === 'gif' ? '-beer.gif' : 'beer.png'}`);
 	})
 };
 
 const DedCommand: Command = {
 	name: 'ded',
 	description: 'there is AUHHGHHA KHUAGHH',
-	run: (interaction) => Promise.resolve('https://tycrek.com/v/Tom%20Scott%20chokes%20on%20vape.mp4')
+	run: (interaction) => Promise.resolve('https://sylviefox.ca/v/Tom%20Scott%20chokes%20on%20vape.mp4')
 };
 
 const BoobsCommand: Command = {
